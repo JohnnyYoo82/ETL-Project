@@ -32,3 +32,14 @@ ALTER TABLE `costofliving` ADD PRIMARY KEY(country);
 
 -- View countrydata Table
 select * from costofliving
+
+
+-- Create Location Table
+CREATE TABLE location (
+  country TEXT,
+  Multidimentional poverty INT,
+  lat INT,
+  lon INT
+  );
+
+
