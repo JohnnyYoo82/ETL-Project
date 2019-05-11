@@ -18,3 +18,18 @@ ALTER TABLE `countrydata` ADD PRIMARY KEY(country);
 -- View countrydata Table
 select * from countrydata
 
+-- Create costofliving Table
+CREATE TABLE costofliving (
+  country TEXT,
+  costofliving INT,
+  groceries_index INT,
+  restaurant_index INT
+  );
+  
+-- Set Variable Character Field for country and set as primary key
+ALTER TABLE `costofliving` modify country VARCHAR(50);
+ALTER TABLE `costofliving` ADD PRIMARY KEY(country);
+
+-- View countrydata Table
+select * from costofliving
+
