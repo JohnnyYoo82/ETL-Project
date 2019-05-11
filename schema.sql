@@ -32,4 +32,3 @@ ALTER TABLE `costofliving` ADD PRIMARY KEY(country);
 
 -- View countrydata Table
 select * from costofliving
-
