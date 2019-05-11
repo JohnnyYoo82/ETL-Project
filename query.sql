@@ -4,7 +4,7 @@ SELECT * FROM countrydata;
 SELECT * FROM county;
 
 -- Join tables on county_id
-SELECT premise.id, premise.premise_name, county.county_name
-FROM premise
+SELECT countrydata.country, countrydata.region, countrydata.population_inthousands, countrydata.gdp_inmillions, countrydata.urbanpop_pcttotalpop,
+FROM countrydata
 INNER JOIN county
-ON premise.county_id = county.county_id;
+ON countrydata.country = county.country;
