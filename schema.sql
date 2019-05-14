@@ -8,7 +8,7 @@ CREATE TABLE countrydata (
   region TEXT,
   population_inthousands INT,
   gdp_inmillions INT,
-  urbanpop_pcttotalpop INT
+  urbanpop_pcttotalpop DECIMAL(4,1)
 );
 
 -- Set Variable Character Field for country and set as primary key
@@ -21,9 +21,9 @@ select * from countrydata
 -- Create costofliving Table
 CREATE TABLE costofliving (
   country TEXT,
-  costofliving INT,
-  groceries_index INT,
-  restaurant_index INT
+  costofliving DECIMAL(5,2),
+  groceries_index DECIMAL(5,2),
+  restaurant_index DECIMAL(5,2)
   );
   
 -- Set Variable Character Field for country and set as primary key
@@ -38,8 +38,8 @@ select * from costofliving
 CREATE TABLE location (
   country TEXT,
   multidimentional_poverty INT,
-  lat INT,
-  lon INT
+  lat DECIMAL(8,5),
+  lon DECIMAL(8,5)
   );
   
 -- Set Variable Character Field for country and set as primary key
@@ -53,7 +53,7 @@ select * from location
 CREATE TABLE happiness (
   country TEXT,
   overall_happiness_rank INT,
-  happiness_score INT
+  happiness_score DECIMAL(4,3)
   );
 
 -- Set Variable Character Field for country and set as primary key
