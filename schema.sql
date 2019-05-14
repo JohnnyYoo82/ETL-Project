@@ -49,4 +49,16 @@ ALTER TABLE `location` ADD PRIMARY KEY(country);
 -- View location Table
 select * from location
 
+-- Create happiness Table
+CREATE TABLE happiness (
+  country TEXT,
+  overall_happiness_rank INT,
+  happiness_score INT
+  );
 
+-- Set Variable Character Field for country and set as primary key
+ALTER TABLE `happiness` modify country VARCHAR(50);
+ALTER TABLE `happiness` ADD PRIMARY KEY(country);
+
+-- View happiness Table
+select * from happiness
